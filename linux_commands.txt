@@ -1,0 +1,141 @@
+Here is a comprehensive list of commonly used Linux commands categorized for easy reference:
+
+---
+
+### 1. **File and Directory Management**
+- `ls`: List files and directories.
+- `cd`: Change directory.
+- `pwd`: Print current working directory.
+- `mkdir <dir>`: Create a new directory.
+- `rmdir <dir>`: Remove an empty directory.
+- `rm <file>`: Remove a file.
+- `rm -r <dir>`: Remove a directory and its contents.
+- `touch <file>`: Create an empty file.
+- `cp <source> <destination>`: Copy files/directories.
+- `mv <source> <destination>`: Move or rename files/directories.
+- `find <path> -name <name>`: Search for files or directories.
+
+---
+
+### 2. **File Viewing and Editing**
+- `cat <file>`: Display file contents.
+- `tac <file>`: Display file contents in reverse order.
+- `less <file>`: View file contents one page at a time.
+- `more <file>`: Similar to `less` with fewer features.
+- `head -n <lines> <file>`: Show the first `n` lines of a file.
+- `tail -n <lines> <file>`: Show the last `n` lines of a file.
+- `nano <file>`: Open file in the Nano editor.
+- `vi <file>` or `vim <file>`: Open file in the Vi or Vim editor.
+
+---
+
+### 3. **File Permissions**
+- `chmod <permissions> <file>`: Change file permissions.
+- `chown <owner>:<group> <file>`: Change file ownership.
+- `ls -l`: Display file permissions and ownership.
+
+---
+
+### 4. **Process Management**
+- `ps`: Display running processes.
+- `top`: Show real-time system processes and resource usage.
+- `htop`: An enhanced version of `top` (if installed).
+- `kill <PID>`: Kill a process by PID.
+- `killall <name>`: Kill processes by name.
+- `jobs`: List background jobs.
+- `fg`: Bring a background job to the foreground.
+- `bg`: Resume a background job.
+
+---
+
+### 5. **File Compression and Archiving**
+- `tar -cvf <archive.tar> <files>`: Create a tar archive.
+- `tar -xvf <archive.tar>`: Extract a tar archive.
+- `gzip <file>`: Compress a file with gzip.
+- `gunzip <file.gz>`: Decompress a gzip file.
+- `zip <archive.zip> <files>`: Create a zip archive.
+- `unzip <archive.zip>`: Extract a zip archive.
+
+---
+
+### 6. **Networking**
+- `ping <hostname>`: Test network connectivity.
+- `curl <URL>`: Retrieve content from a URL.
+- `wget <URL>`: Download files from the internet.
+- `ifconfig`: Display network interfaces (deprecated, use `ip`).
+- `ip addr`: Show IP addresses and network interfaces.
+- `netstat`: Display network connections (deprecated, use `ss`).
+- `ss`: Display network connections.
+- `scp <source> <destination>`: Securely copy files between systems.
+- `ssh <user>@<host>`: Connect to a remote system via SSH.
+
+---
+
+### 7. **Disk Management**
+- `df -h`: Show disk space usage.
+- `du -sh <dir>`: Show directory size.
+- `mount <device> <mountpoint>`: Mount a device.
+- `umount <device>`: Unmount a device.
+- `lsblk`: List information about block devices.
+- `fdisk -l`: Display partition information.
+- `blkid`: Display UUIDs and labels of devices.
+
+---
+
+### 8. **System Information**
+- `uname -a`: Display system information.
+- `uptime`: Show system uptime.
+- `hostname`: Show or set the system hostname.
+- `whoami`: Display the current user.
+- `id`: Show user and group IDs.
+- `env`: Display environment variables.
+- `history`: Show command history.
+
+---
+
+### 9. **Package Management**
+#### Debian-based systems (e.g., Ubuntu):
+- `apt update`: Update package list.
+- `apt upgrade`: Upgrade installed packages.
+- `apt install <package>`: Install a package.
+- `apt remove <package>`: Remove a package.
+
+#### Red Hat-based systems (e.g., CentOS):
+- `yum update`: Update packages.
+- `yum install <package>`: Install a package.
+- `yum remove <package>`: Remove a package.
+
+---
+
+### 10. **Search and Text Processing**
+- `grep <pattern> <file>`: Search for a pattern in a file.
+- `awk '{print $1}' <file>`: Process and extract fields from text.
+- `sed 's/old/new/g' <file>`: Find and replace text in a file.
+- `cut -d <delimiter> -f <fields> <file>`: Extract specific fields from a file.
+- `sort <file>`: Sort file contents.
+- `uniq <file>`: Remove duplicate lines.
+- `wc <file>`: Count words, lines, and characters in a file.
+
+---
+
+### 11. **User Management**
+- `who`: Show who is logged in.
+- `adduser <username>`: Add a new user.
+- `deluser <username>`: Remove a user.
+- `passwd <username>`: Change a user's password.
+- `su <user>`: Switch to another user.
+- `sudo <command>`: Run a command with superuser privileges.
+
+---
+
+### 12. **Other Useful Commands**
+- `echo "text"`: Print text to the terminal.
+- `clear`: Clear the terminal screen.
+- `alias ll='ls -l'`: Create an alias.
+- `date`: Display the current date and time.
+- `cal`: Display a calendar.
+- `sleep <seconds>`: Pause execution for a specified time.
+- `exit`: Exit the terminal session.
+- `man <command>`: Show the manual for a command.
+
+
